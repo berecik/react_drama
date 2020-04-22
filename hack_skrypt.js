@@ -4095,7 +4095,7 @@
                             options: [Ff, zf, Ef, Cf, Af, Gf, Df, Bf]
                         },
                         edgeStyle: {
-                            selector: ".vjs-edge-style > select",
+                            selector: ".vjs-edge-css > select",
                             id: "%s",
                             label: "Text Edge Style",
                             options: [["none", "None"], ["raised", "Raised"], ["depressed", "Depressed"], ["uniform", "Uniform"], ["dropshadow", "Dropshadow"]]
@@ -4178,7 +4178,7 @@
                     }, b.prototype.createElFont_ = function () {
                         return ib("div", {
                             className: "vjs-track-settings-font",
-                            innerHTML: ['<fieldset class="vjs-font-percent vjs-track-setting">', this.createElSelect_("fontPercent", "", "legend"), "</fieldset>", '<fieldset class="vjs-edge-style vjs-track-setting">', this.createElSelect_("edgeStyle", "", "legend"), "</fieldset>", '<fieldset class="vjs-font-family vjs-track-setting">', this.createElSelect_("fontFamily", "", "legend"), "</fieldset>"].join("")
+                            innerHTML: ['<fieldset class="vjs-font-percent vjs-track-setting">', this.createElSelect_("fontPercent", "", "legend"), "</fieldset>", '<fieldset class="vjs-edge-css vjs-track-setting">', this.createElSelect_("edgeStyle", "", "legend"), "</fieldset>", '<fieldset class="vjs-font-family vjs-track-setting">', this.createElSelect_("fontFamily", "", "legend"), "</fieldset>"].join("")
                         })
                     }, b.prototype.createElControls_ = function () {
                         var a = this.localize("restore all settings to the default values");
