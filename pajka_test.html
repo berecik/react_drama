@@ -76,6 +76,15 @@
         h2.style.color = "black";
     }
 
+    for(const button of document.querySelectorAll(".button")){
+        button.onmouseover = () => {
+            button.style.backgroundColor = "teal";
+        }
+        button.onmouseout = () => {
+            button.style.backgroundColor = "white";
+        }
+    }
+
 
 
 </script>
