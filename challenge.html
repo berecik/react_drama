@@ -92,6 +92,13 @@
             button.style.backgroundColor = color;
         }
     }
+    const newButton = document.getElementById("button-add");
+    let list = document.querySelector("ul");
+    newButton.addEventListener("click", () => {
+        let li = document.createElement("li");
+        list.append(li);
+        let buttonName = document.getElementById("button-name").value;
+        li.innerHTML = buttonName;
 </script>
 
 </body>
