@@ -94,11 +94,15 @@
     }
     const newButton = document.getElementById("button-add");
     let list = document.querySelector("ul");
-    newButton.addEventListener("click", () => {
+    function dodajButton() {
+        let list = document.querySelector("ul");
         let li = document.createElement("li");
         list.append(li);
         let buttonName = document.getElementById("button-name").value;
         li.innerHTML = buttonName;
+    }
+    newButton.addEventListener("click", dodajButton);
+      
 </script>
 
 </body>
