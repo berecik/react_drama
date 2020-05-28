@@ -25,6 +25,9 @@
         #ula {
             background-color: violet;
         }
+        ul {
+            column-count: 2;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +95,17 @@
             button.style.backgroundColor = color;
         }
     }
+    const newButton = document.getElementById("button-add");
+    let list = document.querySelector("ul");
+    function dodajButton() {
+        let list = document.querySelector("ul");
+        let li = document.createElement("li");
+        list.append(li);
+        let buttonName = document.getElementById("button-name").value;
+        li.innerHTML = buttonName;
+    }
+    newButton.addEventListener("click", dodajButton);
+      
 </script>
 
 </body>
