@@ -25,10 +25,10 @@
         #ula {
             background-color: violet;
         }
-        div {
+        .galaxy-site {
             width: 45%;
         }
-        
+
     </style>
 </head>
 <body>
@@ -45,33 +45,35 @@
     <input name="button-name" id="button-name" type="text">
     <button id="button-add">Dodaj nowy button</button>
 
-    <div>
-        <ul>
-            <li>
-                <button id="ola" class="button">
-                    Ola
-                </button>
-            </li>
-            <li>
-                <button id="ala" class="button">
-                    Ala
-                </button>
-            </li>
-        </ul>    
-    </div>  
-    <div>
-        <ul>  
-            <li>
-                <button id="ela" class="button">
-                    Ela
-                </button>
-            </li>
-            <li>
-                <button id="ula" class="button">
-                    Ula
-                </button>
-            </li>
-        </ul>
+    <div id="galaxy">
+        <div class="galaxy-site" id="site-bright">
+            <ul>
+                <li>
+                    <button id="ola" class="button">
+                        Ola
+                    </button>
+                </li>
+                <li>
+                    <button id="ala" class="button">
+                        Ala
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="galaxy-site" id="site-dark">
+            <ul>
+                <li>
+                    <button id="ela" class="button">
+                        Ela
+                    </button>
+                </li>
+                <li>
+                    <button id="ula" class="button">
+                        Ula
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 
 <script>
@@ -111,7 +113,7 @@
         li.innerHTML = buttonName;
     }
     newButton.addEventListener("click", dodajButton);
-      
+
 </script>
 
 </body>
