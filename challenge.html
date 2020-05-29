@@ -25,9 +25,10 @@
         #ula {
             background-color: violet;
         }
-        ul {
-            column-count: 2;
+        div {
+            width: 45%;
         }
+        
     </style>
 </head>
 <body>
@@ -44,29 +45,34 @@
     <input name="button-name" id="button-name" type="text">
     <button id="button-add">Dodaj nowy button</button>
 
-
-    <ul>
-        <li>
-            <button id="ola" class="button">
-                Ola
-            </button>
-        </li>
-        <li>
-            <button id="ala" class="button">
-                Ala
-            </button>
-        </li>
-        <li>
-            <button id="ela" class="button">
-                Ela
-            </button>
-        </li>
-        <li>
-            <button id="ula" class="button">
-                Ula
-            </button>
-        </li>
-    </ul>
+    <div>
+        <ul>
+            <li>
+                <button id="ola" class="button">
+                    Ola
+                </button>
+            </li>
+            <li>
+                <button id="ala" class="button">
+                    Ala
+                </button>
+            </li>
+        </ul>    
+    </div>  
+    <div>
+        <ul>  
+            <li>
+                <button id="ela" class="button">
+                    Ela
+                </button>
+            </li>
+            <li>
+                <button id="ula" class="button">
+                    Ula
+                </button>
+            </li>
+        </ul>
+    </div>
 
 <script>
     let h1 = document.querySelector("h1");
